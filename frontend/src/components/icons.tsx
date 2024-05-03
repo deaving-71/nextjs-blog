@@ -1,0 +1,71 @@
+import {
+  ArrowRight,
+  ArrowUpRightFromSquare,
+  Bold,
+  Calendar,
+  ChevronDown,
+  CircleUser,
+  Code,
+  Command,
+  Home,
+  Italic,
+  Link,
+  List,
+  ListOrdered,
+  Loader2,
+  Moon,
+  MoreHorizontal,
+  PanelsLeftBottom,
+  Pen,
+  Plus,
+  Quote,
+  Redo,
+  Search,
+  SquarePen,
+  Strikethrough,
+  SunMedium,
+  Tag,
+  Trash2,
+  Undo,
+  X,
+} from "lucide-react"
+
+export type IconKeys = keyof typeof icons
+
+type IconsType = {
+  [key in IconKeys]: React.ElementType
+}
+
+const icons = {
+  logo: Command,
+  sun: SunMedium,
+  moon: Moon,
+  arrowRight: ArrowRight,
+  Panels: PanelsLeftBottom,
+  Home,
+  SquarePen,
+  Plus,
+  Xmark: X,
+  Calendar,
+  TripeDots: MoreHorizontal,
+  Link,
+  ChevronDown,
+  Search,
+  CircleUser,
+  Tag,
+  Bold,
+  Italic,
+  Strikethrough,
+  Code,
+  BulletList: List,
+  OrderedList: ListOrdered,
+  Quote,
+  Undo,
+  Redo,
+  Pen,
+  Trash: Trash2,
+  Loader: Loader2,
+  ExternalLink: ArrowUpRightFromSquare,
+}
+
+export const Icons: IconsType = icons

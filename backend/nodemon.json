@@ -1,0 +1,5 @@
+{
+  "watch": ["./**/*.ts", ".env"],
+  "ext": "ts,json",
+  "exec": "tsx bin/server.ts"
+}

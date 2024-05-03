@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "NodeNext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "#start/*": ["./start/*"],
+      "#config/*": ["./config/*"],
+      "#database/*": ["./database/*"],
+      "#bin/*": ["./bin/*"],
+      "#services/*": ["./services/*"],
+      "#controllers/*": ["./app/controllers/*"],
+      "#middlewares/*": ["./app/middlewares/*"],
+      "#exception/*": ["./app/exception/*"],
+      "#validators/*": ["./app/validators/*"],
+      "#schemas/*": ["app/schemas/*"],
+      "#types/*": ["./types/*"],
+      "#util/*": ["./util/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.d.ts", "**/*.ts"]
+}
