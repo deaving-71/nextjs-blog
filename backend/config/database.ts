@@ -1,9 +1,9 @@
 import env from "#start/env";
 
 export const config = {
-  host: "localhost",
-  port: 27000,
-  user: "postgres",
-  password: "admin",
-  database: "blog",
+  host: env.DB_HOST,
+  port: env.DB_PORT,
+  user: env.DB_USER,
+  password: env.DB_PASSWORD,
+  database: env.DB_DATABASE,
 };

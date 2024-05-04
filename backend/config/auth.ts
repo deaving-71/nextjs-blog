@@ -12,10 +12,12 @@ export const config: SessionConfig = {
     expires: true,
     attributes: {
       domain: cookieOptions.domain,
+      // @ts-ignore //? Lucia did not add "none" to the types for some reason
       sameSite: cookieOptions.sameSite,
       secure: cookieOptions.secure,
     },
   },
+  //@ts-ignore //? Lucia have set this to a {} to a typescript bug
   getUserAttributes: (attributes: User) => {
     return {
       id: attributes.id,

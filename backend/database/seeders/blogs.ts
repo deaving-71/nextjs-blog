@@ -1,14 +1,12 @@
 import { config } from "#config/database";
 import { blogsTable, blogsToTags } from "#schemas/blogs";
 import { tagsTable } from "#schemas/tags";
-import { usersTable } from "#schemas/users";
 import logger from "#services/logger";
 import { NewBlog, NewBlogToTag } from "#types/blog";
 import { NewTag } from "#types/tag";
 import { slugify } from "#util/slugify";
 import { uuid } from "#util/uuid";
 import { drizzle } from "drizzle-orm/node-postgres";
-import { DateTime } from "luxon";
 import pg from "pg";
 import { faker } from "@faker-js/faker";
 

@@ -40,7 +40,7 @@ export const create = requestHandler(async (req, res) => {
   const { name, slug } = await createTagValidator.parseAsync(req.body);
   const id = uuid();
 
-  const [tag] = await db
+  await db
     .insert(tagsTable)
     .values({ id, name, slug: slugify(slug) })
     .returning();

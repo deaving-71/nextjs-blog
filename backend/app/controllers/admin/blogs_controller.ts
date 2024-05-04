@@ -2,7 +2,6 @@ import db from "#database/client";
 import {
   blogsTable,
   blogsToTags,
-  getArticlesTags,
   getBlogPostsCount,
   getBlogs,
 } from "#schemas/blogs";

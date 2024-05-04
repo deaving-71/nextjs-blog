@@ -1,11 +1,16 @@
 {
   "name": "next-blog-api",
   "version": "0.0.1",
-  "description": "",
+  "author": "deaving-71",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon",
+    "build": "npm run build:copy-files && npx tsc",
+    "build:copy-files": "node build.js",
+    "start": "node bin/server.js",
+    "clean": "rm -rf build",
     "migration:generate": "npx drizzle-kit generate:pg",
     "migration:run": "tsx database/migrate.ts",
     "migration:drop": "tsx database/drop_tables.ts",
@@ -20,8 +25,6 @@
     "Next.js",
     "Blog"
   ],
-  "author": "deaving-71",
-  "license": "MIT",
   "dependencies": {
     "@adonisjs/env": "^6.0.0",
     "@lucia-auth/adapter-drizzle": "^1.0.7",

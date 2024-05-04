@@ -19,6 +19,8 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "skipLibCheck": true,
+    "outDir": "build",
+    "rootDir": "./",
     "baseUrl": "./",
     "paths": {
       "#start/*": ["./start/*"],

@@ -2,15 +2,13 @@ import db from "#database/client";
 import {
   blogsTable,
   blogsToTags,
-  getArticlesTags,
   getBlogPostsCount,
   getBlogs,
 } from "#schemas/blogs";
 import { tagsTable } from "#schemas/tags";
 import { requestHandler } from "#util/request_handler";
 import { indexBlogValidator, showBlogValidator } from "#validators/blogs";
-import { eq, inArray } from "drizzle-orm";
-import { stripHtml } from "string-strip-html";
+import { eq } from "drizzle-orm";
 
 export const index = requestHandler(async (req, res) => {
   const filters = indexBlogValidator.parse(req.query);

@@ -3,7 +3,7 @@ import cors from "#middlewares/cors";
 import cookieParser from "cookie-parser";
 import express from "express";
 import { errorHandler } from "#exception/error_handler";
-import { httpLogger } from "#services/logger";
+// import { httpLogger } from "#services/logger";
 import { customRequestMethods } from "#middlewares/custom_request_methods";
 import { customReponseMethods } from "#middlewares/custom_response_methods";
 

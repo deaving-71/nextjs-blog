@@ -1,5 +1,5 @@
 import db from "#database/client";
-import { blogsTable, getBlogs } from "#schemas/blogs";
+import { blogsTable } from "#schemas/blogs";
 import { requestHandler } from "#util/request_handler";
 import { count, eq } from "drizzle-orm";
 

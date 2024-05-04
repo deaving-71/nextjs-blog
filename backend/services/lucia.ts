@@ -1,7 +1,7 @@
 import db from "#database/client";
 import { config } from "#config/auth";
-import { usersTable } from "app/schemas/users.js";
-import { sessionsTable } from "app/schemas/sessions.js";
+import { usersTable } from "#schemas/users";
+import { sessionsTable } from "#schemas/sessions";
 import { DrizzlePostgreSQLAdapter } from "@lucia-auth/adapter-drizzle";
 import { Lucia } from "lucia";
 

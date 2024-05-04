@@ -1,4 +1,3 @@
-import env from "#start/env";
 import { CookieOptions } from "express";
 
 export const config: CookieOptions = {

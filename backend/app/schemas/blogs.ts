@@ -1,7 +1,6 @@
 import {
   index,
   pgEnum,
-  PgSelect,
   pgTable,
   primaryKey,
   text,
