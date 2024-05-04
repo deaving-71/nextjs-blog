@@ -1,8 +1,8 @@
-import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
+import logger from "#services/logger";
+import { drizzle } from "drizzle-orm/node-postgres";
 import { config } from "#config/database";
 import { migrate } from "drizzle-orm/node-postgres/migrator";
-import logger from "#services/logger";
 
 logger.info("Running migrations...");
 

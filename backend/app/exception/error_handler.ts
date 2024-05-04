@@ -15,7 +15,7 @@ export const errorHandler = async (
     });
   }
 
-  logger.error(`unhandled error\n ${JSON.stringify(err)}`);
+  logger.error(`unhandled error\n ${err}`);
   res.internalServerError({
     message: "Something went wrong, please try again later",
   });

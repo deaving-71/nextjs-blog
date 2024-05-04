@@ -5,7 +5,6 @@ import logger from "#services/logger";
 logger.info("dropping all tables...");
 
 const client = pg(config);
-
 try {
   await client`DROP TABLE if exists sessions, users, blogs, tags, blogs_to_tags cascade;`;
   logger.info("all tables dropped");

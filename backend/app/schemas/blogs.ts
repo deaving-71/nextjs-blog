@@ -124,7 +124,7 @@ export async function getBlogs({
       blogsTable.publishedAt
     );
 
-  if (blogs.length < 0) return blogs;
+  if (blogs.length <= 0) return blogs;
 
   const articlesIds = blogs.map((blog) => blog.id);
   const articlesTags = await getArticlesTags(articlesIds);
