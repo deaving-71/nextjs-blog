@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "build": "npm run build:copy-files && npx tsc",
+    "build": "npm run build:copy-files && tsc",
     "build:copy-files": "node build.js",
     "start": "node bin/server.js",
     "clean": "rm -rf build",

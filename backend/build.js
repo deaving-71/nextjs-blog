@@ -15,7 +15,6 @@ try {
 try {
   await copyFile("package.json", "./build/package.json");
   await copyFile("package-lock.json", "./build/package-lock.json");
-  await copyFile(".env", "./build/.env");
 } catch (err) {
   console.error(err.message);
 }
