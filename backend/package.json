@@ -7,9 +7,10 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "build": "node build.js && tsc",
+    "build": "node build.js && npx tsc",
     "start": "node bin/server.js",
     "clean": "rm -rf build",
+    "check": "npx tsc --noEmit",
     "migration:generate": "npx drizzle-kit generate:pg",
     "migration:run": "tsx database/migrate.ts",
     "migration:drop": "tsx database/drop_tables.ts",
