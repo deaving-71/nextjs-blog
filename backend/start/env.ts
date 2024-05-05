@@ -11,6 +11,7 @@ const validator = Env.rules({
   NODE_ENV: Env.schema.enum(["development", "production", "test"]),
   APP_DEBUG: Env.schema.boolean(),
   LOG_LEVEL: Env.schema.string(),
+  ALLOWED_ORIGINS: Env.schema.string(),
 
   // database variables
   DB_HOST: Env.schema.string(),

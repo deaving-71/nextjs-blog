@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "build": "node build.js && npx tsc",
+    "build": "NODE_ENV=development node build.js && tsc",
     "start": "node bin/server.js",
     "clean": "rm -rf build",
     "check": "npx tsc --noEmit",
