@@ -20,3 +20,15 @@ export const customReponseMethods = requestHandler((_, res, next) => {
 
   next();
 });
+
+declare global {
+  namespace Express {
+    interface Response {
+      created: (payload?: any) => any;
+      notFound: (payload?: any) => any;
+      badRequest: (payload?: any) => any;
+      unauthorized: (payload?: any) => any;
+      internalServerError: (payload?: any) => any;
+    }
+  }
+}
