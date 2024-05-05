@@ -7,8 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "build": "npm run build:copy-files && tsc",
-    "build:copy-files": "node build.js",
+    "build": "node build.js && tsc",
     "start": "node bin/server.js",
     "clean": "rm -rf build",
     "migration:generate": "npx drizzle-kit generate:pg",
